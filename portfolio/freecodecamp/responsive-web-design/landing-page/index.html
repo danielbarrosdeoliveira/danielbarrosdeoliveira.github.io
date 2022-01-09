@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpFounders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/grid.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <header id="header" class="header">
+      <div class="header__container container">
+        <div class="header__container__logo">
+          <a href="#presentation">
+            <img id="header-img" src="./img/logo.svg" alt="logo helpfounders" />
+          </a>
+        </div>
+        <nav id="nav-bar" class="header__container__nav">
+          <ul>
+            <li>
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#advantages">Advantages</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#newsletter">Newsletter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="#presentation" class="container presentation">
+        <h1>We will help you when founding your company</h1>
+
+        <p class="text-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis 
+          nulla obcaecati officiis facere minus laudantium veritatis delectus perferendis. 
+          Laboriosam porro beatae officiis, amet necessitatibus?
+        </p>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/VEX_aG00rK4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      <section id="packages" class="packages">
+        <div class="packages__container container">
+          <h2 class="text-title">Amazing packages for everyone</h2>
+          <p class="text-body">
+            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+          </p>
+          <div class="packages__cards">
+            <div class="packages__card">
+              <span>Package 1</span>
+              <h3>starter</h3>
+              <p class="text-body">This is Photoshop's version  of Lorem Ipsum.</p>
+              <h4 class="card__price">99$<h4>
+              <button class="card__button button">Try It Now</button>
+            </div>
+            <div class="packages__card">
+              <span>Package 2</span>
+              <h3>hero</h3>
+              <p class="text-body">This is Photoshop's version  of Lorem Ipsum.</p>
+              <h4 class="card__price">199$<h4>
+              <button class="card__button button">Try It Now</button>
+            </div>
+            <div class="packages__card">
+              <span>Package 3</span>
+              <h3>deluxe</h3>
+              <p class="text-body">This is Photoshop's version  of Lorem Ipsum.</p>
+              <h4 class="card__price">299$<h4>
+              <button class="card__button button">Try It Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="advantages" class="advantages">
+        <div class="advantages__container container">
+          <h2 class="text-title text-title--dark">We offer you a lot of advantages</h2>
+          <p class="text-body text-body--dark">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+          </p>
+          <div class="advantages__icons">
+            <div class="advantages__icon">
+              <div class="advantages__circle">
+                <img src="./img/icons/chess.svg" alt="">
+              </div>
+              <h3>best Strategies</h3>
+              <p>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet. Aenean sollicitudin, lorem quis 
+                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+              </p>
+            </div>
+            <div class="advantages__icon">
+              <div class="advantages__circle">
+                <img src="./img/icons/dollar-bag.svg" alt="">
+              </div>
+              <h3>Real funding</h3>
+              <p>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet. Aenean sollicitudin, lorem quis 
+                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+              </p>
+            </div>
+            <div class="advantages__icon">
+              <div class="advantages__circle">
+                <img src="./img/icons/composite.svg" alt="">
+              </div>
+              <h3>Adequat planning</h3>
+              <p>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet. Aenean sollicitudin, lorem quis 
+                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+              </p>
+            </div>            
+          </div>
+          <div class="advantages__call-to-actions">
+            <button class="button" type="button">Call us : 030 - 123 456 789</button>
+            <button class="button button--white" type="button">get Started now</button>
+          </div>
+        </div>
+      </section>
+      <section id="newsletter" class="newsletter container">
+        <form id="form" class="newsleteer__form" action="https://www.freecodecamp.com/email-submit">
+          <h2 class="text-title">Newsletter</h2>
+          <p class="text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <div class="newsletter__inputs">
+            <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+            <input type="submit" id="submit" class="button" value="Submit" src="https://www.freecodecamp.com/email-submit"/>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer  id="footer" class="footer container">
+      <p class="text-body">Alguns direitos reservados - Desenvolvido por 
+        <a href="https://github.com/danielbarrosdeoliveira">Daniel Oliveira</a>
+      </p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
