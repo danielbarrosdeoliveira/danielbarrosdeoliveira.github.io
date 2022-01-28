@@ -1,0 +1,486 @@
+/* =========== GERAIS =========== */
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	color: #34495e;
+}
+
+p {
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #34495e;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 54px;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+	font-size: 24px;
+	text-transform: uppercase;
+	line-height: 45px;
+}
+
+.negrito {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.separador {
+	border-top: solid 2px #34495e;
+	border-bottom: solid 2px #34495e;
+}
+
+.separador-branco {
+	border-top: solid 2px #fff;
+	border-bottom: solid 2px #fff;
+}
+
+.btn {
+	text-align: center;
+	height: 30px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	background-color: #34495e;
+	color: #fff;
+	border: none;
+}
+
+.btn:hover {
+	transition-duration: 0.5s;
+	background-color: #1abc9c;
+}
+
+.btn-inverso {
+	text-align: center;
+	height: 30px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	background-color: #fff;
+	color: #1abc9c;
+	border: none;
+}
+
+.btn-inverso:hover {
+	transition: 0.8s ease-in-out;
+	background-color: #34495e;
+	color: #fff;
+}
+
+.call {
+	padding-top: 40px;
+	text-align: center;
+	clear: both;
+}
+
+.titulo {
+	margin-top: 60px;
+	margin-bottom: 40px;
+	padding: 5px 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+.input {
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	background-color: #1abc9c;
+	border: 2px solid #34495e;
+	width: 100%;
+	padding: 10px;
+	outline: 2px #fff;
+}
+
+.input::placeholder {
+	color:#eee;
+}
+
+/* =========== HEADER =========== */
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #34495e;
+	z-index: 10;
+}
+
+.header_logo {
+	font-size: 20px;
+	color: #fff;
+	padding: 20px 0;
+	float: left;
+	text-transform: uppercase;
+}
+
+.header_logo:hover{
+	color: #1abc9c;
+}
+
+.header_menu {
+	text-align: right;
+}
+
+.header_menu  ul  li {
+	padding: 20px;
+}
+
+.header_menu  ul  li  a {
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	margin-left: 20px;
+	font-weight: bold;
+	border-top: solid 5px transparent;
+	line-height: 24px;
+}
+
+.header_menu  ul  li  a:hover {
+	border-bottom: 3px solid #1abc9c;
+	padding-bottom: 10px;
+	transition-duration: 0.5s;
+}
+
+/* =========== INTRODUÇÃO =========== */
+
+.introducao {
+	padding-top: 80px;
+	width: 100%;
+	min-height: 500px;
+	background: url(../img/home.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.introducao  h1 {
+	width: 70%;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 120px;
+}
+
+/* ====================== ANIMAÇÃO TYPEWRITER  ====================== */
+
+.introducao h1::after {
+	content: '|';
+	opacity: 1;
+	margin-left: 5px;
+	display: inline-block;
+	animation: blink .7s infinite;
+}
+
+@keyframes blink {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+/* =========== SERVIÇOS =========== */
+
+.sobre-mim {
+	margin-top: 60px;
+	text-align: center;
+}
+
+.sobre-mim img {
+	width: 100%;
+	max-width: 200px;
+	border-radius: 50%;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.descricao {
+	margin-top: 40px;
+}
+
+.habilidades {
+	margin-top: 40px;
+}
+
+.habilidades i {
+	font-size: 20px;
+}
+
+/* ============ HABILIDADES, BARRAS DE PROGRESSO ============ */
+
+.progress {
+	height: 30px;
+	background-color: #34495e;
+	position: relative;
+}
+
+/* ============ HABILIDADES HTML ============ */
+
+.progress .progress-html {
+	position: absolute;
+	height: 100%;
+	background-color: #1abc9c;
+	animation: progress-animation-html 8s 3;
+	width: 90%;
+}
+
+@keyframes progress-animation-html {
+	0% {
+		width: 0%;
+	}
+	90% {
+		width: 90%
+	}
+}
+
+/* ============ HABILIDADES CSS ============ */
+
+.progress .progress-css {
+	position: absolute;
+	height: 100%;
+	background-color: #1abc9c;
+	animation: progress-animation-css 8s 3;
+	width: 70%;
+}
+
+@keyframes progress-animation-css {
+	0% {
+		width: 0%;
+	}
+	70% {
+		width: 70%
+	}
+}
+
+/* ============ HABILIDADES JS ============ */
+
+.progress .progress-js {
+	position: absolute;
+	height: 100%;
+	background-color: #1abc9c;
+	animation: progress-animation-js 8s 3;
+	width: 60%;
+}
+
+@keyframes progress-animation-js {
+	0% {
+		width: 0%;
+	}
+	60% {
+		width: 60%
+	}
+}
+
+/* ============ HABILIDADES BOOTSTRAP ============ */
+
+.progress .progress-bootstrap {
+	position: absolute;
+	height: 100%;
+	background-color: #1abc9c;
+	animation: progress-animation-bootstrap 8s 3;
+	width: 60%;
+}
+
+@keyframes progress-animation-bootstrap {
+	0% {
+		width: 0%;
+	}
+	60% {
+		width: 60%
+	}
+}
+
+/* ============ HABILIDADES PHP ============ */
+
+.progress .progress-php {
+	position: absolute;
+	height: 100%;
+	background-color: #1abc9c;
+	animation: progress-animation-php 8s 3;
+	width: 40%;
+}
+
+@keyframes progress-animation-php {
+	0% {
+		width: 0%;
+	}
+	40% {
+		width: 40%
+	}
+}
+
+/* ============ SERVIÇOS ============ */
+
+.servicos {
+	color: #fff;
+	margin-top: 60px;
+	clear: both;
+	width: 100%;
+	height: 520px;
+	background-color: #1abc9c;
+	text-align: center;
+}
+
+.servicos p {
+	font-size: 14px;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+}
+
+.servicos h3 {
+	font-size: 20px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	padding: 10px;
+}
+
+.servicos i {
+	color: #fff;
+	font-size: 50px;
+	padding: 15px;
+}
+
+.servicos i:hover {
+	color: #34495e;
+}
+
+/* ============ PORTFÓLIO ============ */
+
+.portfolio {
+	color: #34495e;
+	width: 100%;
+	height: 400px;
+}
+
+.portfolio img {
+	width: 100%;
+	height: 260px;
+	cursor: pointer;
+	transition: 0.3s;
+	padding-bottom: 20px;
+}
+  
+.portfolio img:hover {
+	opacity: 0.7;
+}
+
+.portfolio p {
+	text-align: center;
+	font-size: 18px;
+	line-height: 27px;
+	padding-bottom: 60px;
+}
+
+.portfolio p a {
+	text-decoration: none;
+	color: #34495e;
+}
+
+.portfolio p a:hover{
+	color: #1abc9c;
+}
+
+/* ============ CONTATO ============ */
+
+.contato {
+	display: inline-block;
+	color: #fff;
+	width: 100%;
+	height: 580px;
+	background-color: #1abc9c;
+}
+
+.mensagem{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.mensagem h3 {
+	font-size: 16px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.nao-aparece {
+	visibility: hidden;
+	height: 0;
+	position: absolute;
+}
+
+.dados-contato {
+	text-align: right;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+.dados-contato i {
+	padding-left: 20px;
+	margin-top: 15px;
+	font-size: 40px;
+	color: #fff;
+}
+
+.dados-contato i:hover {
+	color: #34495e;
+}
+
+.dados-contato h3 {
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* ============ FOOTER ============ */
+
+.footer {
+	padding: 22px 0;
+	width: 100%;
+	height: 60px;
+	background-color: #34495e;
+	color: #fff;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer a:hover {
+	color: #1abc9c;
+}
+
+.copy-left {
+	text-align: left;
+}
+
+.copy-right {
+	text-align: right;
+}
+
+.fa-heart {
+	color: #e11414;
+}
+
+.fa-coffee {
+	color: #964b00;
+}

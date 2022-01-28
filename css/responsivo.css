@@ -1,0 +1,122 @@
+/* ============== ESTILOS PARA TABLETS ============== */
+@media only screen and (min-width: 788px) and (max-width: 979px){
+
+}
+
+/* ============== ESTILOS PARA SMARTPHONES ============== */
+@media only screen and (max-width: 787px) {
+
+  .header {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .header_logo {
+    text-align: center; 
+    width: 100%;
+  }
+
+  .header_menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header_menu  ul {
+    padding: 20px;
+  }
+
+  .header_menu  ul  li {
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    height: 72px;
+  }
+
+  .header_menu  ul  li  a {
+    clear: both;
+    margin: 40px 10px;
+    padding: 4px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+
+  .header_menu  ul  li  a:hover {
+    color: #1abc9c;
+    border: none;
+  }
+
+  /* =========== INTRODUÇÃO =========== */
+
+  .introducao {
+    padding-top: 80px;
+    width: 100%;
+    min-height: 460px;
+    background: url(../img/home.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .introducao  h1 {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+
+  /* ============ SERVIÇOS ============ */
+  .servicos {
+    height: 968px;
+  }
+  
+  /* ============ PORTFÓLIO ============ */
+
+  .portfolio {
+    height: 760px;
+  }
+
+  .portfolio img {
+    height: 200px;
+  }
+  
+  /* ============ CONTATO ============ */
+
+  .contato {
+    height: 740px;
+    text-align: center;
+    background-color: #1abc9c;
+  }
+
+  .mensagem {
+    clear: both;
+  }
+
+  .dados-contato {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .dados-contato i {
+    padding: 5px 15px;
+  }
+
+  /* ============ FOOTER ============ */
+
+  .footer {
+    height: 100px;
+  }
+
+  .copy-left {
+    text-align: center;
+  }
+
+  .copy-right {
+    text-align: center;
+  }
+
+}
